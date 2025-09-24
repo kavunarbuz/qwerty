@@ -44,5 +44,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-elif select_program == "1.10":
-name=input("введите имя")
