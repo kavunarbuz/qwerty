@@ -37,10 +37,25 @@ def main():
         elif select_program == "1.9":
             num =input ("число:")
             print(num,"вот такое число Вы ввели")
+
+        elif select_program == "1.10":
+        num=input("введите имя")
+            print(num)
+
+        elif select_program == "1.11":
+            num = input("введите название команды")
+            print("команда", num,"чемпион!")
+        elif select_program == "1.12":
+            num = input("введите имя")
+            print(f"привет,{num}!")
+        elif select_program == "1.13":
+            int= input(введите целое число)
+if __name__ == "__main__":
+    main()
+
         
         else:
             print("вы ввели не верное число")
-
-if __name__ == "__main__":
-    main()
+            
+       
 
