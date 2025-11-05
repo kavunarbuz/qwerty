@@ -107,7 +107,7 @@ def main():
             a = random.randint(2, 10)
             y = 3 * a ** 2 + 5 * a - 21
             print(y)
-        elif select_program == "2.22.2":
+        elif select_program == "2.2":
             import random
             from math import sqrt
             a = random.randint(2, 10)
