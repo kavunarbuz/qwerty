@@ -419,7 +419,223 @@ def main():
             s = (a / b)
             d = (a + b) / 2
             print(e, w, q, s, d, sep=",    ")
-        elif select_program == "2.39":
+        elif select_program == "3.1":
+            import random
+            a = random.randint(10000, 15000)
+            print(a/100)
+        elif select_program == "3.2":
+            import random
+            a = random.randint(1000, 1500)
+            print(a/100)
+        elif select_program == "3.3":
+            import random
+            a = 234
+           print(round(a/7))
+       elif select_program == "3.4":
+           import random
+           n = float(input())
+           k = float(input())
+           print(k//n)
+           print(k-(n*(k//n)))
+     elif select_program == "3.5":
+          import random
+         a = 543
+         b = 130
+         s = 543*130
+         b = 130**2
+         print(round(s/b))
+     elif select_program == "3.6":
+         import random
+        n = int(input())
+        s = (n-1)//4+1
+        print(s)
+     elif select_program == "3.7":
+       import random
+       n = int(input())
+       s = (n-1)//3+1
+       print(s)
+     elif select_program == "3.8":
+      def find_row(serial_number):
+    # Стартовый номер билета (для первого места в первом ряду)
+    start_number = 1643
+    # Количество мест в одном ряду
+    seats_per_row = 15
+    
+    # Вычисляем порядковый номер места (относительно первого билета)
+    relative_number = serial_number - start_number
+    
+    # Определяем номер ряда (округляем вверх)
+    row_number = (relative_number // seats_per_row) + 1
+    
+    return row_number
+
+# Пример использования
+serial_number = int(input("Введите серийный номер билета: "))
+row = find_row(serial_number)
+print(f"Место с серийным номером {serial_number} находится в ряду {row}.")
+      elif select_program == "3.9": 
+         n = int(input ())
+         x = (n//3600)
+         e = (x*60)
+         s = (e*60)
+         print(x, e, s)
+     elif select_program == "3.10": 
+        k = int(input("Введите k (1-365): "))
+        d = int(input("Введите d (1-7, где 1 — понедельник, 7 — воскресенье): "))
+
+
+       n = (d + k - 2) % 7
+
+# Переводим воскресенье (7) в 0, остальные оставляем как есть
+       if n == 0:
+       n = 0  # воскресенье
+    else:
+    n = n  # 1–6 (понедельник–суббота)
+
+print(f"k-й день года приходится на день недели: {n}")
+      elif select_program == "3.11": 
+         n = int(input("Введите количество месяцев n: "))
+         x = (n % 12) + 1
+         print(f"Номер месяца: {x}")
+     elif select_program == "3.12": 
+         k = int(input("Введите номер квартиры: "))
+
+         floor = (k - 1) // 4 + 1
+         position_on_floor = (k - 1) % 4 + 1
+
+         print(f"Этаж: {floor}")
+         print(f"Номер на этаже: {position_on_floor}")
+    elif select_program == "3.13": 
+        n = int(input("Введите порядковый номер n: "))
+
+
+       row = (n - 1) // 5 + 1
+       col = (n - 1) % 5 + 1
+
+      print(f"Строка: {row}")
+      print(f"Столбец: {col}")
+  elif select_program == "3.14": 
+      k = int(input("Введите номер квартиры: "))
+
+      # Номер подъезда (1–4)
+      entrance = (k - 1) // 54 + 1
+
+      # Смещение внутри подъезда (0–53)
+      offset_in_entrance = (k - 1) % 54
+
+      # Номер этажа в подъезде (1–9)
+      floor = offset_in_entrance // 6 + 1
+
+      # Номер квартиры на этаже (1–6)
+      position_on_floor = (k - 1) % 6 + 1
+
+      print(f: {entrance}")
+      print(f: {floor}")
+      print(f: {position_on_floor}")
+   elif select_program == "3.16":
+     N = int(input("Введите двузначное число: "))
+
+    tens = N // 10      # число десятков
+    units = N % 10     # число единиц
+
+    print(f"Число десятков: {tens}")
+    print(f"Число единиц: {units}")
+   elif select_program == "3.17":
+     import math
+     import random
+
+     x = random.randint(10, 99)
+     q = math.floor(x/10)
+     c = str(x)
+     s = c[1]
+     print(q+int(s))
+     print(x)
+    elif select_program == "3.18":
+    import math
+    import random
+
+    x = random.randint(10, 99)
+    q = math.floor(x/10)
+    c = str(x)
+    s = c[1]
+    n = s
+    w = q
+
+   print(n,w, sep="")
+   print(x)
+  elif select_program == "3.19":
+   import math
+   import random
+
+    x = random.randint(100, 909)
+    q = math.floor(x/10)
+    c = str(x)
+    w = c[0]
+    s = c[1]
+    q = c[2]
+
+print(w, s, q, sep=" ,")
+  elif select_program == "3.20":
+    import math
+    import random
+
+    x = random.randint(100, 909)
+    q = math.floor(x/10)
+    c = str(x)
+    w = c[0]
+    e = c[1]
+    r = c[2]
+    s = (int(w)+int(e)+int(r))
+    p = 1
+     for t in c:
+    p *= int(t)
+    print(r)
+    print(e)
+    print(s)
+    print(p)
+    print(x)
+    elif select_program == "3.21":
+   import math
+   import random
+
+   x = random.randint(100, 909)
+   q = math.floor(x/10)
+   c = str(x)
+   w = c[0]
+   e = c[1]
+   r = c[2]
+   print(r, e, w, sep="")
+   print(x)
+    elif select_program == "3.22":
+    import math
+    import random
+
+    x = random.randint(100, 909)
+    q = math.floor(x/10)
+    c = str(x)
+    w = c[0]
+    e = str(x)
+    r = e[1]
+    p = str(x)
+    f = p[2]
+    print(r,f,w, sep="")
+    print(x)
+    elif select_program == "3.23":
+     import math
+     import random
+
+     x = random.randint(100, 909)
+     q = math.floor(x/10)
+     c = str(x)
+     w = c[0]
+     e = str(x)
+     r = e[1]
+     p = str(x)
+     f = p[2]
+     print(f, w,r, sep="")
+     print(x)
+     elif select_program == "3.23":
+
 if __name__ == "__main__":
     main()
 else:
