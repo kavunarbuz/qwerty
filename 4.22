@@ -1,0 +1,10 @@
+import math
+import random
+from random import randint
+m = random.randint(-100, 100)
+n = random.randint(-100, 100)
+if m % n == 0:
+    r = m//n
+    print(r)
+else:
+    print("m на n нацело не делится")
