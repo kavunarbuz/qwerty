@@ -1,0 +1,13 @@
+import math
+import random
+from random import randint
+n = random.randint(100, 999)
+r = n//100
+e = (n//10)%10
+t = n%10
+if r==6 or e==6 or t == 6:
+    print("входит")
+else:
+    print("не входит")
+
+print(n)
