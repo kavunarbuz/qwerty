@@ -1,0 +1,10 @@
+import math
+import random
+from random import randint
+a = random.randint(-100, 100)
+if a == 0: print(0)
+b = random.randint(-100, 100)
+c = random.randint(-100, 100)
+d = b**2 - 4*a*c
+if d >= 0: print("корни есть")
+else: print(" корней нету ")
