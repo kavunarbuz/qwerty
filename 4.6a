@@ -1,0 +1,9 @@
+import math
+import random
+from random import randint
+x = 2
+if x > 0:
+    y = math.sin(x)**2
+else: y= 1+2*(math.sin(x)**2)
+print(y)
+print(x)
