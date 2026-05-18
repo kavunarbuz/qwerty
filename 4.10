@@ -1,0 +1,10 @@
+import math
+import random
+from random import randint
+x = random.randint(100, 10000000)
+y = random.randint(100, 10000000)
+n = x//1000
+r = y//0.3048
+if n>r: print("фунты меньше километров")
+if r>n: print("километры меньше фунтов")
+else: print(0)
