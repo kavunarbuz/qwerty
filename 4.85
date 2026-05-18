@@ -1,0 +1,9 @@
+import math
+import random
+from random import randint
+n = random.randint(1, 1188)
+t = n//12
+r = n%12
+print(t,"год(а)",r,"месяца(ов)", sep="")
+
+print(n)
